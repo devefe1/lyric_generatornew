@@ -3,9 +3,12 @@ import Search from './components/Search';
 import './App.css';
 
 class App extends Component {
-  getLyrics() {
-    console.log("working!");
+  getLyrics = (e) => {
+    const searchBar = e.target.elements.searchBar.value;
+    e.preventDefault();
+    console.log(searchBar);
   }
+  
   render() {
     return (
       <div id="app">
