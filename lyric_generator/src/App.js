@@ -8,8 +8,11 @@ class App extends Component {
   getLyrics = async (e) => {
     const searchBar = e.target.elements.searchBar.value;
     e.preventDefault();
-    const api_call = await fetch(`https://genius.p.rapidapi.com/search?key=&q=Kendrick%20Lamar`);
-    console.log(searchBar);
+    const api_call = await fetch(``);
+    
+    const data = await api_call.json();
+    console.log(data)
+
   }
 
   render() {
