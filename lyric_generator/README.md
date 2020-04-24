@@ -1,4 +1,4 @@
-## Lyrics Generator App
+## Gif Generator App
 This is a wireframe for the app
 
 ## Wireframe
