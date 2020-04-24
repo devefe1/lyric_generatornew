@@ -2,18 +2,32 @@ import React,{Component} from 'react';
 import Search from './components/Search';
 import './App.css';
 
-const API_KEY = "D51KB0RSHL0B";
+const API_KEY = 'D51KB0RSHL0B';
 
 class App extends Component {
+  state = {
+    gifs: []
+  }
   getGif = async (e) => {
     const gifName = e.target.elements.gifName.value;
     e.preventDefault();
     const api_call = await fetch (`https://api.tenor.com/v1/search?q=atl&key=${API_KEY}&limit=5`);
     
     const data = await api_call.json();
-    console.log(data);
-  };
+    this.setState({gifs: data.gifs});
+    console.log(this.state.gifs);
+  }
 
+    componentDidMount = () => {
+      const json = localStorage.getItem("gifs");
+      const gifs = JSON.parse(json);
+      this.setState({ gifs });
+    }
+    
+    componentDidUpdate = () => {
+      const gifs = JSON.stringify(this.state.gifs);
+      localStorage.setItem()
+    }
     render() {
       return (
         <div id="app">
