@@ -6,3 +6,8 @@
   font-weight: bold;
   font-size: larger;
 }
+
+#app{
+  background-color: black;
+  height: 100vh;
+}
