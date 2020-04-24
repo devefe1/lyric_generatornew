@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Search from './components/Search';
+import './components/Search.js';
 import './App.css';
 
 class App extends Component {
@@ -7,6 +7,12 @@ class App extends Component {
     return (
       <div id="app">
         <nav className="navBar">LYRIC GENERATOR</nav>
+          <div className="search">
+                  <form className="searchform">
+                      <input className="searchbar" type="text" />
+                      <button className="searchbutton" type="submit">Search</button>
+                  </form>
+              </div> 
       </div>
     );
    }
