@@ -5,7 +5,7 @@ This is a wireframe for the app
 ![wireframe](./wireframe/wireframe.png)
 
 ### Purpose
-This app allows users to search their gifs and songs and the lyrics pull right up! Thereby they can follow along with their favorite artists whenever they listen to their songs!
+This app allows users to search their gifs and they pull right up! Helps better with communication!
 
 
 ### Third Party Api
