@@ -3,12 +3,10 @@ import React, { Component } from 'react';
 class Search extends Component {
     render () {
         return (
-            <div className="search">
-                <form className="searchform">
-                    <input className="searchbar" type="text" />
-                    <button className="searchbutton" type="submit">Search</button>
-                </form>
-            </div> 
+        <form className="searchform">
+            <input className="searchbar" type="text" placeholder="Enter song and artist name" />
+            <button className="searchbutton" type="submit">Search</button>
+        </form>
         )
     }
 };

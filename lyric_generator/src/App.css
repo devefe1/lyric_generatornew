@@ -12,21 +12,27 @@
   height: 100vh;
 }
 
-/* .search {
-  
+.searchform {
+  min-height: 10vh;
+  display: flex;
   justify-content: center;
-  padding-top: 5px;
-} */
+  align-items: center;
+}
+
 .searchbar {
   width: 50%;
   border: none;
-  padding: 10px;
+  padding: 15px;
 }
 
 .searchbutton {
-  background-color: black;
+  background-color: grey;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
   color: white;
   font-weight: bold;
+}
+
+.searchbutton:hover {
+  background-color: rgb(63, 61, 61);
 }
