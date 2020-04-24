@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <Router>
       <div id="app">
-        <nav className="navBar">LYRIC GENERATOR</nav>
+        <nav className="navBar">GIF GENERATOR</nav>
         <Search />
       </div>
       </Router>
