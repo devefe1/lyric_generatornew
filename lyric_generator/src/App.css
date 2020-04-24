@@ -11,3 +11,22 @@
   background-color: black;
   height: 100vh;
 }
+
+/* .search {
+  
+  justify-content: center;
+  padding-top: 5px;
+} */
+.searchbar {
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+
+.searchbutton {
+  background-color: black;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+}
