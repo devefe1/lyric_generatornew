@@ -8,11 +8,11 @@ class App extends Component {
   getGif = async (e) => {
     const gifName = e.target.elements.gifName.value;
     e.preventDefault();
-    const api_call = await fetch (`https://api.tenor.com/v1/search?q=atl&key=${API_KEY}&limit=8`);
+    const api_call = await fetch (`https://api.tenor.com/v1/search?q=atl&key=${API_KEY}&limit=5`);
     
     const data = await api_call.json();
     console.log(data);
-
+  };
 
     render() {
       return (
@@ -21,8 +21,7 @@ class App extends Component {
           <Search />
         </div>
       );
-    };
-  };  
+    }; 
 };
 
 export default App;
