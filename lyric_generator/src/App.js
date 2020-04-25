@@ -44,7 +44,7 @@ componentDidMount() {
       })
       
     } catch(error) {
-      console.error(error)
+      
     }
   }
 
