@@ -56,9 +56,10 @@ componentDidMount() {
           <form className="searchform">
             <input value= {this.state.value} onChange={e => this.onChangeHandler(e)} className="searchbar" type="text" placeholder="Search for a gif here! " />
             <button className="searchbutton" type="submit">Search</button>
-            
             <img alt="" src={this.state.gifs}></img>
-        </form>
+          </form>
+
+          
         </div>
       )
     }
