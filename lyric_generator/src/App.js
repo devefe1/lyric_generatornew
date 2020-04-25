@@ -1,15 +1,48 @@
 import React,{Component} from 'react';
 import Search from './components/Search';
+import axios from 'axios';
 import './App.css';
 
-const API_KEY = 'D51KB0RSHL0B';
+// const API_KEY = 'D51KB0RSHL0B';
+// const Url = 'https://api.tenor.com/v1/search?q=atl&key=D51KB0RSHL0B&limit=5'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    
+  }
+    state = {
+      gifs : "",
+      gifList: "",
+      url:"",
+      weburl:"",
+      value: ""
+    }
 
-  getGif = async (e) => {
-    const gifName = e.target.elements.gifName.value;
-    e.preventDefault();
-    const api_call = await fetch (`https://api.tenor.com/v1/search?q=atl&key=${API_KEY}&limit=5`);
+    onChangeHandler = (e) => {
+      console.log(e.target.value);
+      this.getGifs(e.target.value);
+      this.setState({value: e.target.value.toLowerCase()})
+
+  }
+// Used an onChangeHandler to update the value getting typed into the search bar
+
+componentDidMount() {
+  this.getGifs()
+}  
+
+  async getGifs (value) {
+    try {
+      const grabData = await axios.get (`https://api.tenor.com/v1/search?q=${value}&key=D51KB0RSHL0B&limit=5`)
+      
+      // console.log(grabData.data.results[0]);
+      this.setState({
+        gifs: grabData.data.results[0].media.url,
+      })
+      
+    } catch(error) {
+      console.error(error)
+    }
   }
 
     render() {
@@ -17,9 +50,13 @@ class App extends Component {
         <div id="app">
           <nav className="navBar">GIF GENERATOR</nav>
           <Search />
+          <input
+          value={this.state.value}
+          onChange={e => this.onChangeHandler(e)}></input>
+          <img alt="" src={this.state.gifs}></img>
         </div>
-      );
-    }; 
+      )
+    }
 };
 
 export default App;
