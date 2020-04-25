@@ -4,7 +4,6 @@ import axios from 'axios';
 import './App.css';
 
 // const API_KEY = 'D51KB0RSHL0B';
-// const Url = 'https://api.tenor.com/v1/search?q=atl&key=D51KB0RSHL0B&limit=5'
 
 class App extends Component {
   constructor(props) {
