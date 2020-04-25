@@ -58,8 +58,6 @@ componentDidMount() {
             <button className="searchbutton" type="submit">Search</button>
             <img alt="" src={this.state.gifs}></img>
           </form>
-
-          
         </div>
       )
     }
