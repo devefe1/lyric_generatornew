@@ -55,7 +55,7 @@ componentDidMount() {
           <Search />
           <input value= {this.state.value} onChange={e => this.onChangeHandler(e)}></input>
           
-          <img alt="" src={this.state.gifs}
+          <img alt="" src={this.state.gifs}></img>
         </div>
       )
     }
