@@ -38,6 +38,7 @@ componentDidMount() {
       // console.log(grabData.data.results[0]);
       this.setState({
         gifs: grabData.data.results[0].media.url,
+        gifs1: grabData.data.results[1],
       })
       
     } catch(error) {
