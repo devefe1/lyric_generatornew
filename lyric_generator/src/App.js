@@ -53,10 +53,8 @@ componentDidMount() {
         <div id="app">
           <nav className="navBar">GIF GENERATOR</nav>
           <Search />
-          <input
-          value={this.state.value}
-          onChange={e => this.onChangeHandler(e)}></input>
-          <img alt="" src={this.state.gifs}></img>
+          <input value=
+          
         </div>
       )
     }
