@@ -15,4 +15,5 @@
 .searchform {
   min-height: 10vh;
   display: flex;
+  justify-content: center;
 }
