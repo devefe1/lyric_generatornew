@@ -7,11 +7,11 @@
   font-size: larger;
 }
 
-#app{
-  background-color: black;
-  height: 100vh;
-}
-
+ #app{
+  background-color: black; 
+   height: 100vh;  
+ }
+ 
 .searchform {
   min-height: 10vh;
   display: flex;
@@ -34,5 +34,6 @@
 }
 
 .searchbutton:hover {
-  background-color: rgb(63,61,61);
+  background-color: white;
 }
+
