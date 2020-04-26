@@ -1,9 +1,18 @@
+.navBar{
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: larger;
+}
 
 body{
   background-color: black;
 }
 
 li{
+  /* list-style-type: none; */
   display: inline-block;
   margin: 8px;
   justify-content: center;
@@ -18,19 +27,6 @@ nav{
   display: flex;
   justify-content: center;
 }
-
-/* Nav bar styling */
-
-.navBar{
-  background-color: yellow;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  font-weight: bold;
-  font-size: larger;
-}
-
-/* container that contains the search bar styling */
 .searchform {
   min-height: 10vh;
   display: flex;
@@ -38,15 +34,12 @@ nav{
   align-items: center;
   padding: 10px;
 }
-
-/* search bar styling */
 .searchbar {
   width: 50%;
   border: none;
   padding: 15px;
 }
 
-/* trending gif styling */
 .trends{
   color: black;
   justify-content: center;
@@ -56,7 +49,6 @@ nav{
 
 }
 
-/* closes trending gif styling */
 .homeButton {
   color: white;
   display: flex;
@@ -64,7 +56,6 @@ nav{
   text-decoration: none;
 }
 
-/* footer styling */
 .footerParent {
   background-color: yellow;
   display: flex;
@@ -73,7 +64,6 @@ nav{
 
 }
 
-/* gif rendering container and sizing styling */
 .renderContainer {
  margin: 80px;
   
@@ -85,9 +75,7 @@ nav{
   margin: 25px 10px;
 
 }
-/* ends container styling */
 
-/* how to styling */
 .instructions{
   color: white;
 }
@@ -102,4 +90,7 @@ nav{
   justify-content: center;
 }
 
-/* end how to styling */
+.trendingInstructions{
+  display: flex;
+  justify-content: center;
+}

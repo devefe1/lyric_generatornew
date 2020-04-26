@@ -61,9 +61,9 @@ componentDidMount() {
           <form className="searchform">
             <input value= {this.state.value} onChange={e => this.onChangeHandler(e)} className="searchbar" type="text" placeholder="Search for a gif here! " />
           </form>
-
+//rendering my gifs on the page      
           <div className="renderContainer">
-//rendering my gifs on the page            
+      
           <a href={this.state.gifsID}>
             <img className="sameSize"  src={this.state.gifs} ></img>
         </a>
