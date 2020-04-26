@@ -50,7 +50,6 @@ componentDidMount() {
     render() {
       return (
         <div className="apps">
-            
              <div className="renderContainer">
             <a href={this.state.gifsID}>
             <img className="sameSize"  src={this.state.gifs} ></img>

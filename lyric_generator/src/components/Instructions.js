@@ -4,7 +4,7 @@ class Instructions extends Component {
     render() {
         return (
             <div className = "instructions" >
-                <h2 className = "centerInstructions" >How this Works</h2>
+                <h3 className = "centerInstructions" >HOW THIS WORKS</h3>
                     <div className = "steps">
                        <ul>
                            <li> 1. Open Page </li>
