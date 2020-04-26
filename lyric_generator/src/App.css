@@ -7,11 +7,26 @@
   font-size: larger;
 }
 
- #app{
-  background-color: black; 
-   height: 100vh;  
- }
- 
+body{
+  background-color: black;
+}
+
+li{
+  /* list-style-type: none; */
+  display: inline-block;
+  margin: 8px;
+  justify-content: center;
+}
+
+ul{
+  border: 2px black;
+}
+
+nav{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
 .searchform {
   min-height: 10vh;
   display: flex;
@@ -26,19 +41,52 @@
   padding: 15px;
 }
 
-.searchbutton {
-  background-color: gray;
-  border: none;
-  padding: 15px 20px;
+.trends{
+  color: black;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bolder;
+  height: none;
+
+}
+
+.homeButton {
   color: white;
-  font-weight: bold;
- 
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.searchbutton:hover {
-  background-color: rgb(94, 90, 90);
+.footerParent {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+
 }
 
-.searchbutton:focus {
-  outline:0;
+.renderContainer {
+ margin: 80px;
+  
+}
+.sameSize{
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  margin: 25px 10px;
+
+}
+
+.instructions{
+  color: white;
+}
+
+.centerInstructions {
+  display: flex;
+  justify-content: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
 }
