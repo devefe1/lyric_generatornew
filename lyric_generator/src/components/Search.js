@@ -26,6 +26,7 @@ class Search extends Component {
 // Used an onChangeHandler to update the value getting typed into the search bar
 // http://localhost:3002/:id -- "/:id" req.params.id
 // localhost:3000/4389130
+
 componentDidMount() {
   this.getGifs()
 }  
@@ -34,7 +35,7 @@ componentDidMount() {
     try {
       const grabData = await axios.get (`https://api.tenor.com/v1/search?q=${value}&key=D51KB0RSHL0B&limit=5`)
       
-
+//renders my data
 
       console.log(grabData.data.results[0]);
       this.setState({
@@ -47,7 +48,7 @@ componentDidMount() {
         gifs3: grabData.data.results[3].media[0].gif.url,
         gifsID3: grabData.data.results[3].id,
       })
-      
+//this catches any errors i have      
     } catch(error) {
       console.error(error)
     }
@@ -56,13 +57,13 @@ componentDidMount() {
     render() {
       return (
         <div className="app">
-         
+// this.state.value and onChangeHandler helps update the values inputed into my search bar         
           <form className="searchform">
             <input value= {this.state.value} onChange={e => this.onChangeHandler(e)} className="searchbar" type="text" placeholder="Search for a gif here! " />
           </form>
 
           <div className="renderContainer">
-            
+//rendering my gifs on the page            
           <a href={this.state.gifsID}>
             <img className="sameSize"  src={this.state.gifs} ></img>
         </a>
